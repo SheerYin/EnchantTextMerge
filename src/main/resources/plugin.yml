@@ -1,0 +1,16 @@
+main: io.github.sheeryin.EnchantTextMergeMain
+name: EnchantTextMerge
+version: 1.0
+description: "附魔文本合并"
+api-version: 1.13
+author: [Yin, Wangzhe]
+
+commands:
+  enchanttextmerge:
+    aliases: "etm"
+    description: "主要命令"
+    default: true
+permissions:
+  enchanttextmerge.command:
+    description: "授予对主要命令的访问权限"
+    default: op
