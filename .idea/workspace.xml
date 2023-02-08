@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33c0ea51-7e8c-44a2-9d7d-d70557e54373" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/sheeryin/Language/EnchantmentAlign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/sheeryin/EnchantTextMergeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/sheeryin/EnchantTextMergeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/sheeryin/commands/EnchantTextMergeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/sheeryin/commands/EnchantTextMergeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/test.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +24,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,7 +55,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -96,7 +109,9 @@
       <workItem from="1675536566572" duration="1434000" />
       <workItem from="1675613627573" duration="81000" />
       <workItem from="1675671948782" duration="11000" />
-      <workItem from="1675780920891" duration="2416000" />
+      <workItem from="1675780920891" duration="4758000" />
+      <workItem from="1675821876261" duration="523000" />
+      <workItem from="1675826846180" duration="13862000" />
     </task>
     <task id="LOCAL-00001" summary="简陋实现">
       <created>1675535523750</created>
@@ -119,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675538001326</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="..">
+      <created>1675783749347</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675783749347</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +161,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="简陋实现" />
     <MESSAGE value="3.13" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.13" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
 </project>

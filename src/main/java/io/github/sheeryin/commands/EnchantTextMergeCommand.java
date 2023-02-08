@@ -1,18 +1,19 @@
 package io.github.sheeryin.commands;
 
-import org.bukkit.Bukkit;
+import io.github.sheeryin.Language.EnchantmentAlign;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 public class EnchantTextMergeCommand implements CommandExecutor {
 
@@ -35,6 +36,47 @@ public class EnchantTextMergeCommand implements CommandExecutor {
             itemMetaMerge.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 
             List<String> list = new ArrayList<>();
+            StringBuilder enchantmentText = new StringBuilder();
+            int count = 0;
+
+            player.sendMessage(String.valueOf(itemInMainHand.getItemMeta().getEnchants().size()));
+
+            for (Map.Entry<Enchantment, Integer> entry : itemInMainHand.getItemMeta().getEnchants().entrySet()) {
+                String enchantment = entry.getKey().getKey().toString().replace("minecraft:", "");
+                if (EnchantmentAlign.enchantmentContrast.containsKey(enchantment)) {
+                    enchantment = EnchantmentAlign.enchantmentContrast.get(enchantment);
+                }
+                int enchantmentLevel = entry.getValue();
+
+                if (count == 3) {
+                    list.add(enchantmentText.toString());
+                    enchantmentText.delete(0, enchantmentText.length());
+                    count = 0;
+                }
+
+                count = count + 1;
+                enchantmentText.append("§f").append(enchantment).append(enchantmentLevel).append("   ");
+
+            }
+            if (enchantmentText.length() > 0) {
+                list.add(enchantmentText.toString());
+            }
+
+            itemMetaMerge.setLore(list);
+            player.getInventory().getItemInMainHand().setItemMeta(itemMetaMerge);
+        }
+
+        if (argument[0].equalsIgnoreCase("b")) {
+        }
+
+        return true;
+
+    }
+
+}
+
+            /*
+            List<String> list = new ArrayList<>();
             list.add("");
             int index = 0;
             int number = 0;
@@ -53,15 +95,4 @@ public class EnchantTextMergeCommand implements CommandExecutor {
                     list.add("§f" + enchantment + " " + enchantmentLevel + "; ");
                 }
             }
-
-
-            itemMetaMerge.setLore(list);
-            player.getInventory().getItemInMainHand().setItemMeta(itemMetaMerge);
-        }
-
-        return true;
-
-
-    }
-
-}
+             */
